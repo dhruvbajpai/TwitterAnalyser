@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <include
+        android:id="@+id/app_bar_parent"
+        layout="@layout/app_bar"
+
+        ></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FAF8D4"
+        android:layout_marginTop="2dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/term"
+            android:hint="Enter Search Term"
+            android:layout_weight="6"/>
+        <com.rey.material.widget.Button
+
+            android:id="@+id/search"
+
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btnshape"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Search"
+            android:layout_weight="2"
+            android:textColor="#ffffff"
+            app:rd_rippleType = "wave"
+            app:rd_cornerRadius = "11dp"
+            app:rd_enable="true"/>
+        <com.rey.material.widget.Button
+            android:id="@+id/graph"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btnshape"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Graph It!"
+            android:layout_weight="2"
+            android:textColor="#ffffff"
+            app:rd_rippleType = "wave"
+            app:rd_cornerRadius = "11dp"
+            app:rd_enable="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="#FAF8D4"
+            android:id="@+id/atext"
+            android:hint="Enter Text To Analyse"/>
+        <com.rey.material.widget.Button
+
+            android:id="@+id/analyse"
+
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btnshape"
+            android:layout_gravity="center_horizontal|right"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Analyse"
+
+            android:textColor="#ffffff"
+            app:rd_rippleType = "wave"
+            app:rd_cornerRadius = "11dp"
+            app:rd_enable="true"/>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tweetsview"></ListView>
+
+
+    <!--<enroute.pallavi.chugh.bus_tracking_app.tabs.SlidingTabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tabs"
+        android:layout_gravity="center"
+
+
+        android:layout_height="wrap_content"></enroute.pallavi.chugh.bus_tracking_app.tabs.SlidingTabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mpager"
+        ></android.support.v4.view.ViewPager>-->
+    <!--<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#59656F">
+
+
+        &lt;!&ndash; hack to fix ugly black artefact with maps v2 &ndash;&gt;
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+    </FrameLayout>
+-->
+
+
+</LinearLayout>
